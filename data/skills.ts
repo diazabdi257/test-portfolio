@@ -1,5 +1,5 @@
 export type SkillItem = {
-  name: "React" | "Next.js" | "Tailwind" | "SQL" | "Java" | "Firebase";
+  name: "React" | "Next.js" | "Tailwind" | "SQL" | "Flutter" | "Firebase";
   category: "Frontend" | "Backend & Database" | "Mobile";
 };
 
@@ -9,5 +9,5 @@ export const skills: SkillItem[] = [
   { name: "Tailwind", category: "Frontend" },
   { name: "SQL", category: "Backend & Database" },
   { name: "Firebase", category: "Backend & Database" },
-  { name: "Java", category: "Mobile" },
+  { name: "Flutter", category: "Mobile" },
 ];
