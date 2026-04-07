@@ -112,7 +112,10 @@ export default function SkillsGrid() {
                 {skills
                   .filter((skill) => skill.category === group)
                   .map((skill) => (
-                    <div key={skill.name} className="group relative rounded-xl border border-slate-200 bg-white p-4 text-slate-900">
+                    <div
+                      key={skill.name}
+                      className="group relative rounded-xl border border-slate-200 bg-white p-4 text-slate-900"
+                    >
                       <div className="flex items-center justify-center">
                         <Logo name={skill.name} />
                       </div>

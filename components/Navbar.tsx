@@ -81,14 +81,20 @@ export default function Navbar() {
                     href={item.href}
                     onClick={() => setActiveHref(item.href)}
                     className={`relative z-10 inline-flex h-10 items-center justify-center rounded-full px-4 text-sm font-medium transition-colors ${
-                      isActive ? "text-white" : "text-slate-600 hover:text-slate-900"
+                      isActive
+                        ? "text-white"
+                        : "text-slate-600 hover:text-slate-900"
                     }`}
                   >
                     {isActive && (
                       <motion.span
                         layoutId="pill-nav-active"
                         className="absolute inset-0 -z-10 rounded-full bg-slate-900"
-                        transition={{ type: "spring", stiffness: 350, damping: 28 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 350,
+                          damping: 28,
+                        }}
                       />
                     )}
                     {item.label}
@@ -105,7 +111,9 @@ export default function Navbar() {
             aria-label="Toggle menu"
             aria-expanded={mobileOpen}
           >
-            <span className="text-lg leading-none">{mobileOpen ? "x" : "="}</span>
+            <span className="text-lg leading-none">
+              {mobileOpen ? "x" : "="}
+            </span>
           </button>
         </nav>
       </div>

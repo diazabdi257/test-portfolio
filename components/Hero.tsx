@@ -5,14 +5,19 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="hero" className="flex min-h-[calc(100vh-64px)] items-center py-16">
+    <section
+      id="hero"
+      className="flex min-h-[calc(100vh-64px)] items-center py-16"
+    >
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 md:grid-cols-2 md:items-center">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.45 }}
         >
-          <p className="mb-3 font-semibold text-brand-600">Halo, saya Diaz Abdi</p>
+          <p className="mb-3 font-semibold text-brand-600">
+            Halo, saya Diaz Abdi
+          </p>
           <h1 className="text-3xl font-bold leading-tight text-slate-900 md:text-5xl">
             Software Engineer | Web & Mobile Developer
           </h1>

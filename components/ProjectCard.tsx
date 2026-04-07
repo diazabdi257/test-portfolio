@@ -59,9 +59,6 @@ export default function ProjectCard({
           </a>
         )}
       </div>
-      
     </motion.article>
-    
-    
   );
 }
