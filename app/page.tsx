@@ -1,6 +1,7 @@
 import ContactSection from "@/components/ContactSection";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import OrganizationSection from "@/components/OrganizationSection";
 import ProjectCard from "@/components/ProjectCard";
 import SkillsGrid from "@/components/SkillsGrid";
 import Timeline from "@/components/Timeline";
@@ -13,6 +14,7 @@ export default function Home() {
       <main>
         <Hero />
         <Timeline />
+        <OrganizationSection />
 
         <section id="projects" className="py-20">
           <div className="mx-auto w-full max-w-6xl px-6">
