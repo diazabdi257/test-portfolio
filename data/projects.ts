@@ -6,7 +6,7 @@ export type ProjectItem = {
   demoUrl?: string;
 };
 
-export const project1: ProjectItem[] = [
+export const projects: ProjectItem[] = [
   {
     title: "Booking GOR Mobile App",
     summary:
@@ -15,9 +15,6 @@ export const project1: ProjectItem[] = [
     repoUrl: "https://github.com/diazabdi257/booking-gor-final",
     demoUrl: "https://",
   },
-];
-
-export const project2: ProjectItem[] = [
   {
     title: "Booking GOR Website",
     summary:
@@ -26,8 +23,6 @@ export const project2: ProjectItem[] = [
     repoUrl: "https://github.com/andreanss/Websitegorcifut",
     demoUrl: "https://booking-gor.site/",
   },
-];
-export const project3: ProjectItem[] = [
   {
     title: "ValStore Checker Website",
     summary:

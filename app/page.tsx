@@ -5,7 +5,7 @@ import OrganizationSection from "@/components/OrganizationSection";
 import ProjectCard from "@/components/ProjectCard";
 import SkillsGrid from "@/components/SkillsGrid";
 import Timeline from "@/components/Timeline";
-import {project1, project2, project3} from "@/data/projects";
+import { projects } from "@/data/projects";
 
 export default function Home() {
   return (
@@ -20,13 +20,7 @@ export default function Home() {
           <div className="mx-auto w-full max-w-6xl px-6">
             <h2 className="text-2xl font-bold md:text-3xl">Project</h2>
             <div className="mt-10 grid gap-6 md:grid-cols-2">
-              {project1.map((project) => (
-                <ProjectCard key={project.title} {...project} />
-              ))}
-              {project2.map((project) => (
-                <ProjectCard key={project.title} {...project} />
-              ))}
-              {project3.map((project) => (
+              {projects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
             </div>
