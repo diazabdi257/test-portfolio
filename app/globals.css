@@ -24,3 +24,40 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+.logo-loop {
+  overflow: hidden;
+}
+
+.logo-loop-track {
+  display: flex;
+  width: max-content;
+  gap: var(--logo-gap, 35px);
+  animation: logo-loop-scroll var(--logo-loop-duration, 18s) linear infinite;
+  will-change: transform;
+}
+
+.logo-loop-group {
+  display: flex;
+  gap: var(--logo-gap, 35px);
+}
+
+.logo-loop:hover .logo-loop-track {
+  animation-play-state: paused;
+}
+
+@keyframes logo-loop-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - (var(--logo-gap, 35px) / 2)));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-loop-track {
+    animation: none;
+  }
+}
