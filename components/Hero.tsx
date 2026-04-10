@@ -22,9 +22,7 @@ export default function Hero() {
             Software Engineer | Web & Mobile Developer
           </h1>
           <p className="mt-5 max-w-xl text-slate-600">
-            Saya fokus merancang UI/UX yang mulus hingga integrasi backend yang
-            tangguh untuk menghasilkan produk digital yang cepat, stabil, dan
-            bernilai bisnis.
+            Saya tertarik dengan perangkat lunak, dan data. Dengan pengalaman di bidang Software development, and data.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a

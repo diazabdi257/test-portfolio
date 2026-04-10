@@ -12,6 +12,7 @@ const navItems: NavItem[] = [
   { label: "Beranda", href: "#hero" },
   { label: "Pengalaman", href: "#career" },
   { label: "Organisasi", href: "#organization" },
+  { label: "Education", href: "#education" },
   { label: "Proyek", href: "#projects" },
   { label: "Keahlian", href: "#skills" },
   { label: "Kontak", href: "#contact" },
